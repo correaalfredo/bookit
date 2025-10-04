@@ -28,9 +28,9 @@ async function createRoom(previousState, formData) {
         const response = await storage.createFile('rooms', ID.unique(), image);
         imageID = response.$id;
       } catch (error) {
-        console.log('Error uploading image', error);
+        console.log('Error uploading image!!!', error);
         return {
-          error: 'Error uploading image',
+          error: 'Error uploading image!',
         };
       }
     } else {
